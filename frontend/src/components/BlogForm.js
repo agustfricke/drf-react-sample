@@ -17,7 +17,7 @@ export default function BlogForm ({blogs, setBlogs}) {
     const handleSubmit = e => {
         e.preventDefault();
         if (!body) {
-            alert('Pon algo para postear!')
+            return alert('Pon algo para postear!')
         }
 
         axios.post('/post/', {
